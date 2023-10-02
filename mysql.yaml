@@ -4,7 +4,7 @@
   tasks:
   - name: Disable current MySQL version
     ansible.builtin.command: yum module disable mysql -y
-   
+    
   - name: copy mysql repo
     ansible.builtin.copy:
       src: mysql.repo
